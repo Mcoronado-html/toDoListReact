@@ -1,0 +1,19 @@
+{
+  "usersInfo": [
+    {
+      "id": "70a0",
+      "userName": "1234",
+      "userLast": "12345",
+      "userEmail": "a",
+      "userPass": "a"
+    },
+    {
+      "id": "1512",
+      "userName": "Mario",
+      "userLast": "Coronado",
+      "userEmail": "mario123",
+      "userPass": "mario123"
+    }
+  ],
+  "tasks": []
+}
