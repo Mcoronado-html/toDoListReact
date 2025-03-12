@@ -8,12 +8,11 @@ const LoginCenter = () => {
     const [passUser, SetPassUser]=useState("")
     const [LoginAccess, SetLoginInfo]=useState([])
     const navigate = useNavigate()
+     
     useEffect(() =>{
         async function fetchDataUsers() {
             const userLogin = await UsersCallers.getUsers("usersInfo")
-            SetLoginInfo(userLogin)
-            console.log(LoginAccess);
-            
+            SetLoginInfo(userLogin)            
         };
         fetchDataUsers();
     },[]);
@@ -34,7 +33,9 @@ const LoginCenter = () => {
         
        if (FindUser) {
             navigate("/Home")
-            
+            localStorage.setItem("userId", FindUser.id)
+            localStorage.setItem("userName", FindUser.userName)
+            localStorage.setItem("userLast", FindUser.userLast)
        }
         
     }
