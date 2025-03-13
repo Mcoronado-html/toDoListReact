@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react"
 import UsersCallers from "../services/UsersCallers"
 import { useNavigate } from "react-router-dom"
+import "../styles/LoginCenter.css"
 
 const LoginCenter = () => {
 

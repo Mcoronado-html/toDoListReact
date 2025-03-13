@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import UsersCallers from "../services/UsersCallers"
 import Swal from 'sweetalert2'
+import "../styles/HomeCenter.css"
 
 const HomeCenter = () => {
     
@@ -8,8 +9,6 @@ const HomeCenter = () => {
     const [newTask, SetNewTask]=useState()
     const [reload, SetReload]=useState(false)
     const [taskCompleted, SetTaskCompleted]=useState(0)
-
-
 
     useEffect(() =>{
         async function fetchDataUsers() {
@@ -64,8 +63,6 @@ const HomeCenter = () => {
               Swal.fire("Changes are not saved", "", "info");
             }
           });
-
-
     }
     
     async function editTask(id) {
@@ -93,9 +90,9 @@ const HomeCenter = () => {
 }
     return(
     <>
-    <h3>Website Todo</h3>
-    <h1>{taskCompleted}</h1>
     <div className="home-Container">   
+        <h3>Website Todo</h3>
+        <h1>Pending {taskCompleted}</h1>
         <input value={newTask} onChange={addTask} type="text" placeholder="New Task" />
         <button onClick={registerTask}>Add new task</button> 
         <ul className="ulList">

@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.home-Container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #f8f8f8;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+h1 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 10px;
+}
+input[type="text"] {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    background: #fff;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background: #007aff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+button:hover {
+    background: #005ecb;
+}
+.ulList {
+    list-style: none;
+    margin-top: 20px;
+}
+.ulList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 12px 15px;
+    margin: 8px 0;
+    border-radius: 15px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.ulList p {
+    font-size: 16px;
+    color: #333;
+}
+.ulList button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 8px;
+    transition: 0.2s;
+}
+.ulList button:first-of-type {
+    color: #ff3b30;
+}
+.ulList button:last-of-type {
+    color: #007aff;
+}
+.ulList button:hover {
+    opacity: 0.7;
+}

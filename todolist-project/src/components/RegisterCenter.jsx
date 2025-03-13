@@ -1,6 +1,6 @@
 import React, { useState} from "react"
 import UserCallers from "../services/UsersCallers"
-
+import "../styles/RegisterCenter.css"
 
 const RegisterCenter = () => {
 
@@ -36,10 +36,9 @@ const RegisterCenter = () => {
         UserCallers.postUsers(users, "usersInfo")
     }
 
-
     return(
     <>
-    <div className="register-Continer">
+    <div className="register-Container">
         <div className="register-Info">
             <h3>Register</h3>
             <input value={nameUser} onChange={firstName} type="text" placeholder="First Name"/>
